@@ -5,7 +5,8 @@ export const Home = () => {
   return (
     <>
       {/* Dont pick this page right now we'll think about it later */}
-      <h1>Hi from home</h1>
+      <center><h1>Today we are going to start this project and rightnow we are on design planning, so please keep an eye on this page.
+      We will be rightback!!!</h1></center>
     </>
   );
 };
