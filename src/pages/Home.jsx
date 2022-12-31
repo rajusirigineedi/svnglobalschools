@@ -4,19 +4,9 @@ import "../styles/home.css";
 export const Home = () => {
   return (
     <>
-      <Box
-        className="hi"
-        sx={{
-          width: 300,
-          height: 300,
-          backgroundColor: "primary.dark",
-          "&:hover": {
-            backgroundColor: "primary.main",
-            opacity: [0.9, 0.8, 0.7],
-          },
-        }}
-      />
-      <h1>Hi from home</h1>
+      {/* Dont pick this page right now we'll think about it later */}
+      <center><h1>Today we are going to start this project and rightnow we are on design planning, so please keep an eye on this page.
+      We will be rightback!!!</h1></center>
     </>
   );
 };
