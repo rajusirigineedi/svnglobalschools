@@ -12,8 +12,17 @@ code {
     monospace;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: orange;
+  --secondary-color: yellow;
 }
