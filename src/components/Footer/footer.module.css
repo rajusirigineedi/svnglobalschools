@@ -1,5 +1,40 @@
 .footer {
   width: 100%;
-  height: 5vh;
+  height: auto;
   background-color: red;
+}
+
+.addressCenter{
+    display: grid;
+    justify-content: center;
+    text-transform: capitalize;
+    margin-top: 8rem;
+}
+
+.iconSize{
+  font-size: 35px;
+}
+
+.iconMargin{
+  margin-top: 8rem;
+}
+
+.logoAlign{
+  margin-top: 11rem;
+}
+
+.copyright{
+  margin-top: 6rem;
+  margin-left: 50px;
+  margin-bottom: 5rem;
+}
+
+.footerSvg{
+  margin-top: -126px;
+  margin-left: -130px;
+}
+
+.inputAlign{
+  margin-top: 20px;
+  margin-left: -72px;
 }
