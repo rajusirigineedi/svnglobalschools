@@ -9,22 +9,22 @@ export const Header = () => {
         <div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link className={classes["Link"]} to="/">Home</Link>
             </li>
             <li>
-              <Link to="/academics">Academics</Link>
+              <Link className={classes["Link"]} to="/academics">Academics</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link className={classes["Link"]} to="/about">About</Link>
             </li>
             <li>
-              <Link to="/admissions">Admissions</Link>
+              <Link className={classes["Link"]} to="/admissions">Admissions</Link>
             </li>
             <li>
-              <Link to="/events">Events</Link>
+              <Link className={classes["Link"]} to="/events">Events</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link className={classes["Link"]} to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
