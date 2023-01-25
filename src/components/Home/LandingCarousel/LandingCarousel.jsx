@@ -1,10 +1,13 @@
-import { Button, Col, Image, Row, Typography } from "antd";
+import { Button, Col, Row, Typography } from "antd";
 import React from "react";
-// import classes from "../../../styles/home.module.css";
 import classes from "./landingCarousel.module.css";
+import "./landingCarousel.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const { Title } = Typography;
-const LandingCarousel = (props) => {
+const LandingCarousel = () => {
   return (
     <section className={classes["landing-carousel"]}>
       <Row
@@ -21,10 +24,13 @@ const LandingCarousel = (props) => {
               md={6}
               lg={6}
             >
-              <h2>
-                Srivani Global
-                <br /> Schools
-              </h2>
+              <div className={classes["school-name-logo"]}>
+                <img alt="school" src="logo.png" height={100} />
+                <h2>
+                  Srivani Global
+                  <br /> Schools
+                </h2>
+              </div>
             </Col>
             <Col
               className={classes["block-up--2"]}
@@ -32,7 +38,24 @@ const LandingCarousel = (props) => {
               sm={14}
               md={12}
               lg={12}
-            ></Col>
+            >
+              <Slider
+                {...{
+                  infinite: true,
+                  speed: 2000,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 200,
+                  // vertical: true,
+                }}
+                className={classes["what"]}
+              >
+                <div className={`${classes["as"]} ${classes["as--1"]}`}></div>
+                <div className={`${classes["as"]} ${classes["as--2"]}`}></div>
+                <div className={`${classes["as"]} ${classes["as--3"]}`}></div>
+              </Slider>
+            </Col>
             <Col
               className={classes["block-up--3"]}
               xs={24}
@@ -52,30 +75,71 @@ const LandingCarousel = (props) => {
           <Row style={{ height: "100%" }}>
             <Col
               className={classes["block-down--1"]}
-              xs={18}
-              sm={18}
+              xs={14}
+              sm={14}
               md={12}
               lg={12}
             >
-              four
+              <Slider
+                {...{
+                  infinite: true,
+                  slidesToShow: 1,
+                  fade: true,
+                  speed: 500,
+                  autoplaySpeed: 1500,
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  // verticalSwiping: true,
+                  // vertical: true,
+                }}
+                className={classes["what"]}
+              >
+                <div className={`${classes["as"]} ${classes["as--1"]}`}></div>
+                <div className={`${classes["as"]} ${classes["as--2"]}`}></div>
+                <div className={`${classes["as"]} ${classes["as--3"]}`}></div>
+              </Slider>
             </Col>
             <Col
               className={classes["block-down--2"]}
-              xs={6}
-              sm={6}
-              md={6}
-              lg={6}
+              xs={10}
+              sm={10}
+              md={8}
+              lg={8}
             >
               <Title level={4}>Join us for a Tour</Title>
             </Col>
             <Col
               className={classes["block-down--3"]}
-              xs={24}
-              sm={24}
-              md={6}
-              lg={6}
+              xs={0}
+              sm={0}
+              md={4}
+              lg={4}
             >
-              six
+              {/* <div
+                style={{
+                  backgroundColor: "green",
+                  height: "100%",
+                  width: "100%",
+                }}
+              >
+                <Slider
+                  {...{
+                    infinite: true,
+                    speed: 1500,
+                    rtl: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 800,
+                    // vertical: true,
+                  }}
+                  className={classes["what"]}
+                >
+                  <div className={`${classes["as"]} ${classes["as--1"]}`}></div>
+                  <div className={`${classes["as"]} ${classes["as--2"]}`}></div>
+                  <div className={`${classes["as"]} ${classes["as--3"]}`}></div>
+                </Slider>
+              </div> */}
             </Col>
           </Row>
         </Col>

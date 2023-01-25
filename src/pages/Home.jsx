@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div>
       <LandingCarousel />
-      <div style={{ height: "50vh", backgroundColor: "whitesmoke" }}></div>
+      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
 
       <section className={classes["caurosel-container"]}>
         <Row style={{ height: "100%" }}>
@@ -20,7 +20,10 @@ export const Home = () => {
             xl={16}
             className={classes["important-news"]}
           >
-            <Space direction="vertical">
+            <Space
+              direction="vertical"
+              className={classes["important-news--box"]}
+            >
               <Space>
                 <span className={classes["blockquote-big"]}>"</span>
                 <Title level={3} style={{ color: "white" }}>
@@ -57,10 +60,10 @@ export const Home = () => {
           </Col>
         </Row>
       </section>
-      <div style={{ height: "50vh", backgroundColor: "black" }}></div>
-      <div style={{ height: "40vh", backgroundColor: "white" }}></div>
+      <div style={{ height: "60vh", backgroundColor: "black" }}></div>
+      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
 
-      <PlayfulBanner />
+      {/* <PlayfulBanner /> */}
     </div>
   );
 };

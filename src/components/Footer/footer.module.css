@@ -1,40 +1,90 @@
 .footer {
   width: 100%;
-  height: auto;
-  background-color: red;
+  color: white;
+  min-height: 32vh;
+  background-color: black;
+  /* background-image: url(../../images/IntroImages/playbanner.png); */
 }
 
-.addressCenter{
-    display: grid;
-    justify-content: center;
-    text-transform: capitalize;
-    margin-top: 8rem;
+.copyright {
+  background-color: black;
+  padding: 1rem 6rem;
+  display: grid;
+  place-items: center;
+}
+.copyright--text {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iconSize{
+/* .copyright--text > h5 {
+  display: block;
+  padding: 0 4rem;
+} */
+
+.copyright--icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.addressCenter {
+  display: grid;
+  place-items: center;
+  color: black;
+  text-transform: capitalize;
+}
+
+.footer-lastblock {
+  background-color: black;
+}
+
+.address-box {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: -16rem;
+  border-radius: 3rem 3rem 0 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../images/IntroImages/schoolMap.png);
+  /* padding: 8rem; */
+  /* background-color: red; */
+  background-position: center;
+  background-size: cover;
+}
+
+.iconSize {
   font-size: 35px;
 }
 
-.iconMargin{
-  margin-top: 8rem;
+/*Media Queries*/
+
+/*laptops and desktops*/
+@media only screen and (min-width: 1200px) {
 }
 
-.logoAlign{
-  margin-top: 11rem;
+/*potrait mode for tabs*/
+@media only screen and (max-width: 1023px) {
 }
 
-.copyright{
-  margin-top: 6rem;
-  margin-left: 50px;
-  margin-bottom: 5rem;
+/*tabs*/
+@media only screen and (max-width: 767px) {
+  .copyright {
+    font-size: 12px;
+  }
+  .iconSize {
+    font-size: 24px;
+  }
+  .address-box {
+    border-top-right-radius: 0;
+  }
 }
 
-.footerSvg{
-  margin-top: -126px;
-  margin-left: -130px;
-}
-
-.inputAlign{
-  margin-top: 20px;
-  margin-left: -72px;
+/*normal phones*/
+@media only screen and (max-width: 480px) {
 }

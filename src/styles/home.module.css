@@ -19,19 +19,25 @@
 .caurosel-container {
   /* height: 30vh; */
   width: 100%;
-  background-color: aqua;
+  background-color: black;
 }
 
 .important-news {
-  background-color: black;
+  background-color: whitesmoke;
   color: whitesmoke;
+}
+
+.important-news--box {
+  background-color: black;
+  height: 100%;
   padding-right: 4%;
   padding-left: 8%;
-  padding-top: 4%;
+  padding-top: 5%;
   padding-bottom: 4%;
   display: grid;
   text-align: end;
   place-items: center;
+  border-radius: 0px 3rem 0px 0px;
 }
 
 .application-notifications {
@@ -43,6 +49,7 @@
   padding-bottom: 4%;
   display: grid;
   place-items: center;
+  border-radius: 0px 0px 0px 3rem;
 }
 
 .outline-button {
