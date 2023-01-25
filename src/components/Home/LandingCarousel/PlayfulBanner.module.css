@@ -1,0 +1,6 @@
+.playful-banner {
+  height: 40vh;
+  background-image: url(../../../images/IntroImages/playbanner.png);
+  background-size: cover;
+  background-position: center;
+}

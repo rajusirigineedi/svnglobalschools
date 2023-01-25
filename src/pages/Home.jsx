@@ -1,13 +1,15 @@
 import { Button, Col, Row, Space, Typography } from "antd";
+import LandingCarousel from "../components/Home/LandingCarousel/LandingCarousel";
+import PlayfulBanner from "../components/Home/LandingCarousel/PlayfulBanner";
 import classes from "../styles/home.module.css";
 
 const { Title } = Typography;
 export const Home = () => {
   return (
     <div>
-      <section className={classes["intro-container"]}>
-        <h1 className={classes["school-title"]}>Srivani Global Schools</h1>
-      </section>
+      <LandingCarousel />
+      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
+
       <section className={classes["caurosel-container"]}>
         <Row style={{ height: "100%" }}>
           <Col
@@ -18,7 +20,10 @@ export const Home = () => {
             xl={16}
             className={classes["important-news"]}
           >
-            <Space direction="vertical">
+            <Space
+              direction="vertical"
+              className={classes["important-news--box"]}
+            >
               <Space>
                 <span className={classes["blockquote-big"]}>"</span>
                 <Title level={3} style={{ color: "white" }}>
@@ -55,6 +60,10 @@ export const Home = () => {
           </Col>
         </Row>
       </section>
+      <div style={{ height: "60vh", backgroundColor: "black" }}></div>
+      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
+
+      {/* <PlayfulBanner /> */}
     </div>
   );
 };
