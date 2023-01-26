@@ -1,0 +1,33 @@
+.eventsBanner {
+  color: black;
+  height: 100%;
+  display: flex;
+  background-color: black;
+}
+
+.eventsBanner-gallery {
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 3rem;
+  flex: 1;
+
+  /* border-top: 2rem solid blue; */
+}
+
+.eventsBanner-name {
+  display: flex;
+  width: 12rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-bottom-left-radius: 3rem;
+
+  height: 100%;
+}
+
+.eventsBanner-name > h1 {
+  color: white;
+  transform: rotate(90deg);
+  font-weight: 900;
+}

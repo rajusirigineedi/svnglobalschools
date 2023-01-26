@@ -1,0 +1,31 @@
+.achievmentBanner {
+  color: white;
+  height: 100%;
+  display: flex;
+  background-color: whitesmoke;
+  /* border-bottom: 2rem solid blue; */
+}
+
+.achievmentBanner-gallery {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  flex: 1;
+  border-bottom-left-radius: 3rem;
+}
+
+.achievmentBanner-name {
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 3rem;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 12rem;
+}
+
+.achievmentBanner-name > h1 {
+  color: black;
+  transform: rotate(270deg);
+  font-weight: 900;
+}
