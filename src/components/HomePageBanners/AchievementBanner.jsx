@@ -3,7 +3,6 @@ import { EventCard } from "../Common/EventCard/EventCard";
 import classes from "./AchievementBanner.module.css";
 import { Row, Col, Image } from "antd";
 import { RoundButtons } from "../Common/RoundButtons/RoundButtons";
-import { TriLines } from "../Common/TriLines";
 import b1 from "../../images/IntroImages/block1.png";
 import b2 from "../../images/IntroImages/block2.jpg";
 import b3 from "../../images/IntroImages/block3.jpg";
@@ -74,9 +73,7 @@ export const AchievementBanner = () => {
           </Col>
         </Row>
       </Col>
-      <Col xs={4} sm={4} lg={2} style={{ backgroundColor: "black" }}>
-        <TriLines color={"red"} rightAlign={true} />
-      </Col>
+      <Col xs={4} sm={4} lg={2} style={{ backgroundColor: "black" }}></Col>
     </Row>
   );
 };

@@ -19,11 +19,8 @@ const PlayfulBanner = (props) => {
               <div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  hic nam repellendus esse in ipsum pariatur, temporibus
-                  reiciendis est quae natus eveniet perspiciatis illo sed
-                  tempora! Repudiandae epellendus esse in ipsum pariatur,
-                  temporibus reiciendis est quae natus eveniet perspiciatis illo
-                  sed tempora! Repudiandae in hic corporis. andh asdi ekkd ap
+                  hic nam repelleiciatis illo sed tempora! Repudiandae in hic
+                  corporis. andh asdi ekkd ap
                 </p>
               </div>
               <p className={classes["story-author"]}>KS. chatianlly</p>
