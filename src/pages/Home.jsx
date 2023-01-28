@@ -1,6 +1,9 @@
 import { Button, Col, Row, Space, Typography } from "antd";
 import LandingCarousel from "../components/Home/LandingCarousel/LandingCarousel";
 import PlayfulBanner from "../components/Home/LandingCarousel/PlayfulBanner";
+import { AchievementBanner } from "../components/HomePageBanners/AchievementBanner";
+import { EventsBanner } from "../components/HomePageBanners/EventsBanner";
+import { NumbersBanner } from "../components/HomePageBanners/NumbersBanner";
 import classes from "../styles/home.module.css";
 
 const { Title } = Typography;
@@ -8,16 +11,18 @@ export const Home = () => {
   return (
     <div>
       <LandingCarousel />
-      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
+      <div style={{ height: "40vh", backgroundColor: "whitesmoke" }}>
+        <NumbersBanner />
+      </div>
 
       <section className={classes["caurosel-container"]}>
         <Row style={{ height: "100%" }}>
           <Col
-            xs={24}
-            sm={24}
-            md={16}
-            lg={16}
-            xl={16}
+            xs={{ span: 24, order: 2 }}
+            sm={{ span: 24, order: 2 }}
+            lg={{ span: 16, order: 1 }}
+            md={{ span: 16, order: 1 }}
+            xl={{ span: 16, order: 1 }}
             className={classes["important-news"]}
           >
             <Space
@@ -40,11 +45,11 @@ export const Home = () => {
             </Space>
           </Col>
           <Col
-            xs={24}
-            sm={24}
-            md={8}
-            lg={8}
-            xl={8}
+            xs={{ span: 24, order: 1 }}
+            sm={{ span: 24, order: 1 }}
+            lg={{ span: 8, order: 2 }}
+            md={{ span: 8, order: 2 }}
+            xl={{ span: 8, order: 2 }}
             className={classes["application-notifications"]}
           >
             <Space direction="vertical">
@@ -60,10 +65,15 @@ export const Home = () => {
           </Col>
         </Row>
       </section>
-      <div style={{ height: "60vh", backgroundColor: "black" }}></div>
+      <div style={{ height: "60vh", backgroundColor: "black" }}>
+        <AchievementBanner />
+      </div>
+      <div style={{ height: "60vh", backgroundColor: "black" }}>
+        <EventsBanner />
+      </div>
       <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
-
-      {/* <PlayfulBanner /> */}
+      <PlayfulBanner />
+      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
     </div>
   );
 };
