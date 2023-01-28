@@ -1,0 +1,45 @@
+.numbers-banner {
+  height: 100%;
+}
+
+.numbers-banner--number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbers-banner--cols {
+  /* background-color: green; */
+  display: grid;
+  place-items: center;
+}
+
+.numbers-banner--cols:hover {
+  cursor: pointer;
+  background-color: red;
+  border-radius: 1rem;
+  transform: scale(0.9);
+  z-index: 99;
+  transition-duration: 0.4s;
+}
+
+.numbers-banner--cols:hover h1 {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: transparent;
+}
+.numbers-banner--cols:hover p {
+  color: white;
+}
+
+.numbers-banner--number > h1 {
+  font-weight: 900;
+  font-size: 6.4rem;
+}
+.numbers-banner--cols p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.numbers-banner--number > h1::first-letter {
+  color: red;
+}

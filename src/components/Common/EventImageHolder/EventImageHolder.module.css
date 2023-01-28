@@ -1,0 +1,27 @@
+/*Media Queries*/
+
+/*laptops and desktops*/
+@media only screen and (min-width: 1200px) {
+}
+
+/*potrait mode for tabs*/
+@media only screen and (max-width: 1023px) {
+}
+
+/*tabs*/
+@media only screen and (max-width: 767px) {
+  .event-image-holder > :first-child {
+    display: none;
+  }
+}
+/*tabs*/
+@media only screen and (max-width: 574px) {
+  .event-image-holder > :first-child,
+  .event-image-holder > :nth-child(2) {
+    display: none;
+  }
+}
+
+/*normal phones*/
+@media only screen and (max-width: 480px) {
+}

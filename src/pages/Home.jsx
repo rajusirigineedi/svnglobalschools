@@ -3,6 +3,7 @@ import LandingCarousel from "../components/Home/LandingCarousel/LandingCarousel"
 import PlayfulBanner from "../components/Home/LandingCarousel/PlayfulBanner";
 import { AchievementBanner } from "../components/HomePageBanners/AchievementBanner";
 import { EventsBanner } from "../components/HomePageBanners/EventsBanner";
+import { NumbersBanner } from "../components/HomePageBanners/NumbersBanner";
 import classes from "../styles/home.module.css";
 
 const { Title } = Typography;
@@ -10,7 +11,9 @@ export const Home = () => {
   return (
     <div>
       <LandingCarousel />
-      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
+      <div style={{ height: "40vh", backgroundColor: "whitesmoke" }}>
+        <NumbersBanner />
+      </div>
 
       <section className={classes["caurosel-container"]}>
         <Row style={{ height: "100%" }}>
@@ -69,8 +72,8 @@ export const Home = () => {
         <EventsBanner />
       </div>
       <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
-
-      {/* <PlayfulBanner /> */}
+      <PlayfulBanner />
+      <div style={{ height: "60vh", backgroundColor: "whitesmoke" }}></div>
     </div>
   );
 };
