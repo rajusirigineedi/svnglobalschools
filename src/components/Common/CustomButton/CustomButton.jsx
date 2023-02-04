@@ -8,9 +8,10 @@ const CustomButton = (props) => {
                     color: props.styles.color,
                     backgroundColor: props.styles.backgroundColor,
                     height: props.styles.height || "32px",
-                    width: props.styles.width || "100",
-                    border: `1px solid ${props.styles.border}` || "",
+                    width: props.styles.width || "100%",
+                    border: props.styles.border || "",
                     borderRadius: props.styles.borderRadius || "6px",
+                    cursor:'pointer'
                 }}
                 onClick={props.onClick}
             >
